@@ -1,0 +1,30 @@
+package question4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	public static void main (String[]args) {
+		
+		double SP = 67.83643;
+		double RJ = 36.67866;
+		double MG = 29.22988;
+		double RS = 27.16548;
+		double outros = 19.84953;
+		
+		List<Double> list = new ArrayList<>();
+		list.add(SP);
+		list.add(RJ);
+		list.add(MG);
+		list.add(RS);
+		list.add(outros);
+		
+		double soma = 0;
+		
+		for(Double n : list) {
+			soma += n;
+		}
+		
+		double media = soma / list.size();
+	}
+}
